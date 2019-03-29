@@ -80,9 +80,9 @@ cd $GOPATH/src/github.com/Deardrops/pingcapAssignment
 go run . --input=1984.txt --count=10 --mapLen=10000
 ```
 ##### 参数说明
-`input`：input 文件的路径，默认为 `input.txt`
-`count`：切片文件的数目，默认为 `10`
-`mapLen`：为每个新建的 Map 对象设定的 len，默认值为 `10000`
+- `input`：input 文件的路径，默认为 `input.txt`
+- `count`：切片文件的数目，默认为 `10`
+- `mapLen`：为每个新建的 Map 对象设定的 len，默认值为 `10000`
 #### 运行测试
 ```bash
 go test -v
@@ -90,7 +90,9 @@ go test -v
 本项目附有完整的单元测试
 #### Debug
 主要通过两种方式查看内存分配情况：
+
 一种是设定环境变量 `GODEBUG="gctrace=1"`，然后运行程序，可以看到每次 GC 时堆上的空间变化情况。
+
 另一种是在 main 函数中令全局变量 `DEBUG=true`，使用 golang 的 runtime 库查看内存分配情况。
 
 ## 参考资料
