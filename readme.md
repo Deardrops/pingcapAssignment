@@ -90,7 +90,7 @@ cd $GOPATH/src/github.com/Deardrops/pingcapAssignment
 ```bash
 go run . --input=1984.txt --count=10 --mapLen=10000
 ```
-##### 参数说明
+##### 参数说明（可以通过 `--help` 查看参数说明）
 - `input`：input 文件的路径，默认为 `input.txt`
 - `count`：切片文件的数目，默认为 `10`
 - `mapLen`：为每个新建的 Map 对象设定的 len，默认值为 `10000`
