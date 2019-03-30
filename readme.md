@@ -49,8 +49,9 @@
 系统： Windows 10 / Golang 1.11
 
 测试集采用字母表前 11 个字母生成的全排列，总计约 4x10^8 个不同的单词，每个单词长度为11，文件大小约 400M。
-文件切片数量设置为 10。
-测试的方法见下方 debug 部分说明。
+通过函数 [createTestInput](https://github.com/Deardrops/pingcapAssignment/blob/a504a8540b4d79711738c09b18cac19de9da4f8a/main_test.go#L32)  产生测试集文件。
+
+文件切片数量设置为 10。测试的方法见下方 debug 部分说明。
 
 #### 测试结果
 
